@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marium - Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Dynamic Favicon -->
+    <script>
+      function createFavicon(letter) {
+        const canvas = document.createElement("canvas");
+        canvas.width = 64;
+        canvas.height = 64;
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "#34b7a7"; // Change this to your website's background color
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Text settings
+        ctx.font = "bold 40px Arial";
+        ctx.fillStyle = "#FFFFFF"; // Text color (change as needed)
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(letter, canvas.width / 2, canvas.height / 2);
+
+        // Set the favicon
+        const favicon = document.createElement("link");
+        favicon.rel = "icon";
+        favicon.href = canvas.toDataURL("image/png");
+        document.head.appendChild(favicon);
+      }
+
+      // Call the function with your desired letter
+      createFavicon("M");
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center light-background sticky-top"
+    >
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Marium</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a
+            href="https://www.linkedin.com/in/marium-moin-185024308/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>
+            I provide a range of writing services tailored to meet your content
+            and SEO needs. Let's take your brand to the next level!
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <i class="bi bi-pen"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Content Writing</h3>
+                </a>
+                <p>
+                  I craft engaging, well-researched content tailored to your
+                  audience, optimized for SEO to boost your online presence.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item item-orange position-relative">
+                <div class="icon">
+                  <i class="bi bi-bar-chart-line"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>SEO Optimization</h3>
+                </a>
+                <p>
+                  Drive more traffic with content that ranks! I ensure your
+                  content is optimized for search engines, making it easier for
+                  your audience to find you.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item item-teal position-relative">
+                <div class="icon">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Blog Writing</h3>
+                </a>
+                <p>
+                  From informative articles to creative blogs, I write content
+                  that engages readers and keeps them coming back for more.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item item-red position-relative">
+                <div class="icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Research Writing</h3>
+                </a>
+                <p>
+                  I dive deep into research to provide accurate, data-driven
+                  content that informs and educates your audience.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-item item-indigo position-relative">
+                <div class="icon">
+                  <i class="bi bi-keyboard"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Data Entry</h3>
+                </a>
+                <p>
+                  I provide reliable data entry services to keep your projects
+                  organized and running smoothly with accurate, timely entries.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="service-item item-pink position-relative">
+                <div class="icon">
+                  <i class="bi bi-pencil-square"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Proofreading</h3>
+                </a>
+                <p>
+                  Need a second pair of eyes? I offer proofreading services to
+                  ensure your content is error-free and polished.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">Marium</strong>
+            <span>All Rights Reserved<br /></span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/marium-moin-185024308/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://ahmedraza56.vercel.app/">Ahmed Raza</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
